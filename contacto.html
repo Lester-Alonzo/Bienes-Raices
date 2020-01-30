@@ -32,20 +32,56 @@
       <main class="contenedor seccion contenido-centrado">
           <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
           <form action="">
-              <label for="nombre" >Nombre:</label>
-            <input type="text" id="nombre" placeholder="tu nombre" >
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="tu e-mail" required>
-            
-            <label for="telefono">Telefono:</label>
-            <input type="tel" id="telefono" placeholder="tu telefono" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea  id="mensaje" ></textarea> <!--el tamaño se defino con css-->
+              <fieldset>
+                  <legend>Informacion personal</legend>
+                <label for="nombre" >Nombre:</label>
+                <input type="text" id="nombre" placeholder="tu nombre" >
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="tu e-mail" required>
+                
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" placeholder="tu telefono" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea  id="mensaje" ></textarea> <!--el tamaño se defino con css-->
+            </fieldset>
+            <fieldset>
+                <legend>Informaicon sobre propiedad</legend>
+                <label for="opciones">Vende o compra</label>
+                <select  id="opciones">
+                    <option value="" disabled selected> --Seleciones--</option><!--selected forsa a una opcion para se seleciones por default--->
+                    <option value="">Compra</option>
+                    <option value="">Vende</option>
 
 
 
+                </select>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" min="0" max="10">
 
-            <input type="submit">
+
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser contactado:</p>
+                <label for="telfono">Telefono</label>
+                <input type="radio" name="contacto" value="telefono" id="telfono"><!--Para radio y cualquier selecion unica se utiliza name para que sepan que hacen lo mismo-->
+                
+                <label for="correo">E-mail:</label>
+                <input type="radio" name="contacto" value="correo" id="correo">
+
+                <p>Si elijio Telefono programe la fecha y hora:</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+
+
+
+            </fieldset>
+
+
+            <input type="submit" value="Enviar" class="boton boton-verde">
 
 
           </form>
