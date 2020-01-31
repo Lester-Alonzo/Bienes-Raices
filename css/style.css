@@ -81,6 +81,10 @@ h4 {
     display: inline-block;
     margin-top: 3rem;
     text-align: center;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton-amarillo {
@@ -371,7 +375,18 @@ h4 {
     align-items: center;
 }
 /*contacto*/
+.contacto p{
+    font-size: 1.2rem;
+    margin: 2rem 0 0 0;
+    color: rgb(112, 112, 112);
+}
+legend{
+    font-size: 2rem;
+    color: rgb(75, 71, 71);
+}
 label{
+    font-weight: 700;
+    text-transform: uppercase;
     display: block;
 }
 input:not([type="submit"]), textarea, select 
@@ -385,12 +400,23 @@ input:not([type="submit"]), textarea, select
     border-radius: 1rem;
     color: rgb(85, 126, 167);
 }
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
 select{
     -webkit-appearance: none;
     appearance: none;
 }
 textarea{
     height: 20rem;
+}
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
     

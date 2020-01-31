@@ -31,7 +31,7 @@
       <img src="img/destacada3.jpg" alt="....">
       <main class="contenedor seccion contenido-centrado">
           <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
-          <form action="">
+          <form class="contacto" action="">
               <fieldset>
                   <legend>Informacion personal</legend>
                 <label for="nombre" >Nombre:</label>
@@ -63,12 +63,14 @@
             <fieldset>
                 <legend>Contacto</legend>
                 <p>Como desea ser contactado:</p>
-                <label for="telfono">Telefono</label>
-                <input type="radio" name="contacto" value="telefono" id="telfono"><!--Para radio y cualquier selecion unica se utiliza name para que sepan que hacen lo mismo-->
+                <div class="forma-contacto">
+                    <label for="telfono">Telefono</label>
+                    <input type="radio" name="contacto" value="telefono" id="telfono"><!--Para radio y cualquier selecion unica se utiliza name para que sepan que hacen lo mismo-->
+                    
+                    <label for="correo">E-mail:</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
+                </div>
                 
-                <label for="correo">E-mail:</label>
-                <input type="radio" name="contacto" value="correo" id="correo">
-
                 <p>Si elijio Telefono programe la fecha y hora:</p>
                 <label for="fecha">Fecha:</label>
                 <input type="date" id="fecha">
